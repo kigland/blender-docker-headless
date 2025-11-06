@@ -1,15 +1,15 @@
 ARG UBUNTU_CUDA_VERSION=12.8.1-cudnn-devel-ubuntu24.04
 
-# Add build arguments
-ARG BLENDER_VERSION=4.5.3
-ARG BLENDER_MIRROR_URL=https://mirror.clarkson.edu/blender/release
-# https://mirrors.tuna.tsinghua.edu.cn/blender/blender-release
-
 FROM nvidia/cuda:$UBUNTU_CUDA_VERSION
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES all
+
+# Add build arguments
+ARG BLENDER_VERSION=4.5.3
+ARG BLENDER_MIRROR_URL=https://mirror.clarkson.edu/blender/release
+# https://mirrors.tuna.tsinghua.edu.cn/blender/blender-release
 
 # Update and install dependencies
 RUN apt-get update && apt-get -q install -y --no-install-recommends --fix-missing \
