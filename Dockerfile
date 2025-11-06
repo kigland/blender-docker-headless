@@ -1,4 +1,9 @@
 ARG UBUNTU_CUDA_VERSION=11.7.1-cudnn8-devel-ubuntu20.04
+
+# Add build arguments
+ARG BLENDER_VERSION=4.5.3
+ARG BLENDER_MIRROR_URL=https://mirrors.tuna.tsinghua.edu.cn/blender/blender-release
+
 FROM nvidia/cuda:$UBUNTU_CUDA_VERSION
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -40,10 +45,6 @@ RUN apt-get -q install -y --no-install-recommends --fix-missing \
     x11proto-gl-dev \
     xvfb
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
-
-# Add build arguments
-ARG BLENDER_VERSION=3.6.18
-ARG BLENDER_MIRROR_URL=https://mirror.clarkson.edu/blender/release
 
 # Update Blender installation to use both arguments
 RUN echo "Blender URL: ${BLENDER_MIRROR_URL}/Blender${BLENDER_VERSION%.*}/blender-${BLENDER_VERSION}-linux-x64.tar.xz"
