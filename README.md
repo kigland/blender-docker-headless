@@ -47,12 +47,12 @@ docker run --rm --gpus all \
 
 We use following mirror sites in different dockerfile versions.
 
-| Mirror Provider | Mirror Site | Original Site | Dockerfile Version |
-| :-------------: | :---------: | :-----------: | :----------------: |
-| Tsinghua University | <https://mirrors.tuna.tsinghua.edu.cn/> | Blender | China |
-| Aliyun | <http://mirrors.aliyun.com> | <http://archive.ubuntu.com> | Ubuntu Deb Source | China |
-| [oopsunix](https://github.com/oopsunix) | <https://gh.llkk.cc> | GitHub | China |
-| RWTH Aachen University | <https://ftp.halifax.rwth-aachen.de> | Blender | Global |
+| Mirror Provider | Mirror Site | Original | Original Site | Dockerfile Version |
+| :-------------: | :---------: | :------: | :-----------: | :----------------: |
+| Tsinghua University | <https://mirrors.tuna.tsinghua.edu.cn/> | Blender | <https://www.blender.org/download> | China |
+| Aliyun | <http://mirrors.aliyun.com> | Ubuntu Deb Source | <http://archive.ubuntu.com> | China |
+| [oopsunix](https://github.com/oopsunix) | <https://gh.llkk.cc> | GitHub | <https://github.com> | China |
+| RWTH Aachen University | <https://ftp.halifax.rwth-aachen.de> | Blender | <https://www.blender.org/download> | Global |
 
 ## Key
 
