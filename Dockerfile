@@ -1,4 +1,4 @@
-ARG UBUNTU_CUDA_VERSION=11.7.1-cudnn8-devel-ubuntu20.04
+ARG UBUNTU_CUDA_VERSION=12.8.1-cudnn-devel-ubuntu24.04
 
 # Add build arguments
 ARG BLENDER_VERSION=4.5.3
