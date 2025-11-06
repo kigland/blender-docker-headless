@@ -2,7 +2,8 @@ ARG UBUNTU_CUDA_VERSION=12.8.1-cudnn-devel-ubuntu24.04
 
 # Add build arguments
 ARG BLENDER_VERSION=4.5.3
-ARG BLENDER_MIRROR_URL=https://mirrors.tuna.tsinghua.edu.cn/blender/blender-release
+ARG BLENDER_MIRROR_URL=https://mirror.clarkson.edu/blender/release
+# https://mirrors.tuna.tsinghua.edu.cn/blender/blender-release
 
 FROM nvidia/cuda:$UBUNTU_CUDA_VERSION
 
