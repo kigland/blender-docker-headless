@@ -1,7 +1,7 @@
 import bpy
 
 # Set the rendering engine to Eevee
-bpy.context.scene.render.engine = "BLENDER_EEVEE"
+bpy.context.scene.render.engine = "BLENDER_EEVEE_NEXT"
 
 # Set the output file path
 output_path = "/tmp/test_render_eevee.png"
@@ -9,7 +9,7 @@ bpy.context.scene.render.filepath = output_path
 
 # Configure Eevee settings (optional)
 bpy.context.scene.eevee.taa_render_samples = 64
-bpy.context.scene.eevee.use_bloom = True
+# bpy.context.scene.eevee.use_bloom = True
 
 # Clear the existing scene (optional)
 bpy.ops.wm.read_factory_settings(use_empty=True)
