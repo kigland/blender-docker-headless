@@ -8,7 +8,7 @@ ENV NVIDIA_DRIVER_CAPABILITIES all
 
 # Add build arguments
 ARG BLENDER_VERSION=4.5.3
-ARG BLENDER_MIRROR_URL=https://mirror.clarkson.edu/blender/release
+ARG BLENDER_MIRROR_URL=https://ftp.halifax.rwth-aachen.de/blender/release
 # https://mirrors.tuna.tsinghua.edu.cn/blender/blender-release
 
 # Update and install dependencies
